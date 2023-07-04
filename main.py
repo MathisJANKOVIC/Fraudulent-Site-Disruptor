@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 
-import connexion_page
+import login_page
 import info_page
 import payment_page
 
@@ -26,7 +26,7 @@ with sync_playwright() as playwright :
         try:
             page.goto("https://reglements-factures.com")
 
-            connexion_page.run(page)
+            login_page.run(page)
 
             pay_button = page.get_by_role("button", name="PAYER")
             pay_button.click()
