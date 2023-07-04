@@ -12,8 +12,7 @@ Update : the website has been downed so if you run the script you will probably 
 
 ## Configuration
 - Download and extract the zip or clone the project
-- Open a terminal
-- Install faker with command `pip install faker`
+- Open a terminal and install faker with command `pip install faker`
 - Install Playwright with command `pip install Playwright`
 - Navigate to `AppData\Roaming\Python\Python310\site-packages\playwright\driver`
 - Run the command `playwright.cmd install`
