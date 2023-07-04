@@ -11,11 +11,11 @@ Update : the website site has been downed
 - Python
 
 ## Configuration
-    1. Download and extract the zip or clone the project
-    2. Open a terminal
-    3. Install faker with command `pip install faker`
-    4. Install Playwright with command `pip install Playwright`
-    5. Navigate to `AppData\Roaming\Python\Python310\site-packages\playwright\driver`
-    6. Run the command `playwright.cmd install`
-    7. Navigate into a terminal to the project directory
-    8. Run the command `python main.py` (requires python path in environement variables)
+- Download and extract the zip or clone the project
+- Open a terminal
+- Install faker with command `pip install faker`
+- Install Playwright with command `pip install Playwright`
+- Navigate to `AppData\Roaming\Python\Python310\site-packages\playwright\driver`
+- Run the command `playwright.cmd install`
+- Navigate into a terminal to the project directory
+- Run the command `python main.py` (requires python path in environement variables)
