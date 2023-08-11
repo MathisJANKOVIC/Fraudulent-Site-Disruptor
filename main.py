@@ -6,13 +6,12 @@ import payment_page
 
 execution_number = input("Number of form to fill with fake data : ")
 while(not execution_number.isnumeric()):
-    print("Error : execution number must be an integer ")
+    print("\033[31mExecution number must be an integer \033[0m")
     execution_number = input("Number of form to fill with fake data : ")
 
 execution_number = int(execution_number)
 
 with sync_playwright() as playwright :
-
     browser = playwright.chromium.launch(headless = True)
     execution_progress = succes_number = failure_number = 0
 
