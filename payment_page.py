@@ -1,8 +1,7 @@
 import faker_utils
 import random
 
-def run(page):
-
+def main(page):
     credit_card_num = ""
     for i in range(16):
         credit_card_num = credit_card_num + str(random.randint(0,9))

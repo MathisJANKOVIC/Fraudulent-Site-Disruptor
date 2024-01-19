@@ -1,9 +1,10 @@
 from dateutil.relativedelta import relativedelta
 from datetime import timedelta, datetime
 import random
+
 import faker_utils
 
-def run(page):
+def main(page):
     input_last_name = page.locator(".inp:nth-child(1) > #inp")
     input_last_name.click()
     input_last_name.fill(faker_utils.faker_random.last_name())

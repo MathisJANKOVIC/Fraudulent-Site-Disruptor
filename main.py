@@ -25,13 +25,13 @@ with sync_playwright() as playwright :
         try:
             page.goto("https://reglements-factures.com")
 
-            login_page.run(page)
+            login_page.main(page)
 
             pay_button = page.get_by_role("button", name="PAYER")
             pay_button.click()
 
-            info_page.run(page)
-            payment_page.run(page)
+            info_page.main(page)
+            payment_page.main(page)
 
             page.close()
             succes_number += 1

@@ -1,7 +1,7 @@
-import random
 import faker_utils
+import random
 
-def run(page):
+def main(page):
     phone_number = "0" + str(random.randint(6,7))
     for i in range(8):
         phone_number = phone_number + str(random.randint(0,9))
