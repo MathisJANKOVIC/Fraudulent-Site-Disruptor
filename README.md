@@ -6,14 +6,23 @@ The scam consists of sending massive fraudulent messages to smartphones which te
 
 Update : the website has been downed so if you run the script you will probably have 0% of succes rate
 
-## Requirements
-- Python 3
+## Installation
+Python 3 is required to run this program.
 
-## Configuration
-1. Download and extract the zip or clone the project
-2. Open a terminal and install faker with command `pip install faker`
-3. Install Playwright with command `pip install Playwright`
-4. Navigate to `C:\User\AppData\Roaming\Python\PythonXX\site-packages\playwright\driver` (only for Windows)
-5. Run the command `playwright.cmd install` (only for Windows)
-6. Navigate into a terminal to the project directory
-7. Run the command `python main.py` (requires python path in environement variables)
+```bash
+# Clone the repository
+git clone https://github.com/MathisJANKOVIC/Fraudulent-Website-Disruptor.git
+
+# Install the required modules
+pip install faker
+pip install playwright
+
+# On Windows navigate to the playwright driver dir (XX stands for your python version)
+cd 'C:\User\AppData\Roaming\Python\PythonXX\site-packages\playwright\driver'
+
+# Install playwright browsers (only on Windows)
+playwright.cmd install
+
+# Go to the project directory and run it with python
+python main.py
+```
