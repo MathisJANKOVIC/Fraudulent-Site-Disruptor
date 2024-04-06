@@ -20,12 +20,12 @@ pip install -r requirements.txt
 # On Windows
 -------------------------------------------------------------------------------------
 # Navigate to the Playwright driver directory (replace USER and VERSION accordingly)
-cd 'C:\User\USER\AppData\Roaming\Python\PythonVERSION\site-packages\playwright\driver'
+cd 'C:\Users\USER\AppData\Roaming\Python\PythonVERSION\site-packages\playwright\driver'
 
 # Install Playwright browser
 ./playwright.cmd install
 -------------------------------------------------------------------------------------
 
 # Go back to project directory and run it with python
-python main.py
+python ./src/main.py
 ```
