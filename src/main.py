@@ -15,7 +15,7 @@ with sync_playwright() as playwright:
     succes_number = 0
     failure_number = 0
 
-    for i in range(execution_number) :
+    for i in range(execution_number):
         page = browser.new_page()
         page.set_default_timeout(15_000)
 
@@ -25,12 +25,12 @@ with sync_playwright() as playwright:
         try:
             page.goto("https://reglements-factures.com")
 
-            login.main(page)
+            login.process(page)
             pay_button = page.get_by_role("button", name="PAYER")
             pay_button.click()
 
-            info.main(page)
-            payment.main(page)
+            info.process(page)
+            payment.process(page)
 
             page.close()
             succes_number += 1
