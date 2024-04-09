@@ -17,7 +17,7 @@ with sync_playwright() as playwright:
 
     for i in range(execution_number):
         page = browser.new_page()
-        page.set_default_timeout(15_000)
+        page.set_default_timeout(12_000)
 
         execution_progress += 1
         print(f"{int((execution_progress - 1)/execution_number * 100)}% Loading... ({execution_progress}/{execution_number}) {succes_number} succes, {failure_number} failure(s)")
